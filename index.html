@@ -27,37 +27,142 @@
     <header class="header-sect">
       <div class="container header-container">
         <nav class="header-nav">
-          <a class="logo" href="./index.html" target="_blank">
-            Web
-            <span class="accent">Studio</span>
+          <a class="logo header-logo" href="./index.html" target="_blank"
+          >Web<span class="accent">Studio</span>
           </a>
-          <ul class="page-nav">
-            <li>
-              <a class="link active" href="./index.html" target="_blank">
-                Studio
-              </a>
-            </li>
-            <li>
-              <a class="link" href="" target="_blank">Portfolio</a>
-            </li>
-            <li>
-              <a class="link" href="" target="_blank">Contacts</a>
-            </li>
-          </ul>
+          
+            <ul class="page-nav">
+              <li>
+                <a class="nav-link active" href="./index.html" target="_blank">
+                  Studio
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="" target="_blank">Portfolio</a>
+              </li>
+              <li>
+                <a class="nav-link" href="" target="_blank">Contacts</a>
+              </li>
+            </ul>
         </nav>
-        <address class="main-address">
-          <ul class="adress-list">
-            <li>
-              <a class="link" href="mailto:info@devstudio.com">
-                info@devstudio.com
+          <address class="main-address">
+            <ul class="contacts-list">
+              <li>
+                <a class="contacts-link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+                <button class="butger-btn" type="button">
+                  <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger-icon"></use>
+                  </svg>
+                </button>
+      </div>
+      <!-- #region mobile menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-close" type="button" aria-label="Close modal">
+          <svg
+            class="modal-close-icon"
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            aria-hidden="true"
+          >
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li>
+                <a class="mobile-menu-item accent-mobile" href="./index.html" target="_blank">
+                  Studio
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu-item" href="" target="_blank">Portfolio</a>
+              </li>
+              <li>
+                <a class="mobile-menu-item" href="" target="_blank">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu-contacts">
+          <address>
+            <ul class="mobile-contacts-list">
+              <li>
+                <a class="mobile-contacts-link accent-mobile" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a class="mobile-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+          </div>
+          <div class="mobile-menu-socials">
+          <ul class="mobile-icons-list">
+            <li class="mobile-icon-item">
+              <a href="#" class="mobile-icon-link">
+                <svg
+                  width="24"
+                  height="24"
+                  class="footer-icon-svg"
+                  fill="var(--white, #f4f4fd)"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
-            <li>
-              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <li class="mobile-icon-item">
+              <a href="#" class="mobile-icon-link">
+                <svg
+                  width="24"
+                  height="24"
+                  class="footer-icon-svg"
+                  fill="var(--white, #f4f4fd)"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-icon-item">
+              <a href="#" class="mobile-icon-link">
+                <svg
+                  width="24"
+                  height="24"
+                  class="footer-icon-svg"
+                  fill="var(--white, #f4f4fd)"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-icon-item">
+              <a href="#" class="mobile-icon-link">
+                <svg
+                  width="24"
+                  height="24"
+                  class="footer-icon-svg"
+                  fill="var(--white, #f4f4fd)"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+          </div>
+        </div>
+        <!-- #endregion mobile menu -->
+
       </div>
+
     </header>
     <!-- #endregion header -->
     <!-- #region main -->
@@ -71,7 +176,7 @@
       </section>
       <!-- #endregion hero -->
       <!-- #region feature -->
-      <section class="feature">
+      <section class="feature hidden">
         <div class="container feature-container">
           <h2 class="feature-title visually-hidden">Feature</h2>
           <ul class="feature-list">
@@ -128,7 +233,7 @@
       </section>
       <!-- #endregion feature -->
       <!-- #region Our Team -->
-      <section class="team">
+      <section class="team hidden">
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -305,7 +410,7 @@
       </section>
       <!-- #endregion Our Team -->
       <!-- #region Our Portfolio -->
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -430,7 +535,7 @@
     </main>
     <!-- #endregion main -->
     <!-- #region footer -->
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-container">
         <div class="footer-info">
           <a class="link-site-footer" href="./index.html">
@@ -519,7 +624,7 @@
     </footer>
     <!-- #endregion footer -->
     <!-- #region madal overlay -->
-    <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal-overlay hidden" id="modalOverlay" aria-hidden="true">
       <div
         class="modal"
         role="dialog"
