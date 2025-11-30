@@ -166,7 +166,7 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
+    padding: 0;
     gap: 40px;
   }
 
@@ -428,12 +428,23 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/hero-background-opt.jpg);
+    url(../images/hero/hero-background-mobile-min.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   max-width: 1440px;
   padding: 72px 0;
+}
+
+@media (min-resolution: 2x) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-background-mobile-x2-min.jpg);
+  }
 }
 
 .hero-container {
@@ -484,6 +495,26 @@ button {
     max-width: 496px;
     font-weight: 700;
   }
+
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-background-tablet-min.jpg);
+  }
+
+  @media (min-resolution: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/hero-background-tablet-x2-min.jpg);
+    }
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -498,6 +529,25 @@ button {
     max-width: 496px;
     font-weight: 700;
   }
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-min.jpg);
+  }
+
+  @media (min-resolution: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-x2-min.jpg);
+    }
+  }
 }
 
 /* #endregion hero */
@@ -508,10 +558,9 @@ button {
   display: none;
 }
 
-.feature-container {
-  width: 288px;
-  margin: 96px auto;
-  padding: 0;
+.feature {
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 .feature-list {
@@ -547,7 +596,7 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .feature-list-item {
@@ -621,8 +670,7 @@ button {
 }
 
 .team-container {
-  width: 264px;
-  padding: 0;
+  width: 296px;
   margin: 0 auto;
 }
 
@@ -648,7 +696,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 72px;
+  gap: 64px;
 }
 
 .team-h {
@@ -718,7 +766,7 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 64px 24px;
   }
 
   .team-li {
@@ -914,11 +962,12 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 288px;
+  width: 320px;
 }
 
 .footer-info {
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .link-site-footer {
@@ -956,6 +1005,7 @@ button {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 72px;
 }
 
 .footer-social-title {
@@ -974,7 +1024,6 @@ button {
   letter-spacing: 0.02em;
   width: 264px;
   text-align: left;
-  margin-bottom: 72px;
 }
 
 .footer-icons-list {
@@ -982,7 +1031,7 @@ button {
   gap: 16px;
   padding: 0;
   margin: 0;
-  margin-bottom: 72px;
+
   list-style: none;
 }
 
@@ -1003,7 +1052,7 @@ button {
 }
 
 .footer-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
 
   background-color: transparent;
@@ -1025,7 +1074,6 @@ button {
 .footer-form > .footer-button {
   display: flex;
   align-items: center;
-  margin: 0 auto;
 }
 
 .footer-button {
@@ -1085,9 +1133,9 @@ button {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
+    justify-content: flex-start;
     align-items: center;
-    width: 768px;
+    width: 584px;
     justify-content: space-between;
     align-items: baseline;
     margin: 0 auto;
@@ -1121,7 +1169,6 @@ button {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    justify-content: center;
   }
 
   .footer-input {
