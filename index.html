@@ -59,7 +59,7 @@
             </li>
           </ul>
         </address>
-        <button class="butger-btn" type="button">
+        <button class="butger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger-icon"></use>
           </svg>
@@ -68,7 +68,12 @@
       <!-- #region mobile menu -->
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-close" type="button" aria-label="Close modal">
+          <button
+            class="mobile-close"
+            type="button"
+            aria-label="Close modal"
+            data-menu-close
+          >
             <svg
               class="modal-close-icon"
               width="8"
@@ -182,7 +187,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" data-modal-open type="button">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion hero -->
@@ -792,15 +799,20 @@
       </div>
     </footer>
     <!-- #endregion footer -->
-    <!-- #region madal overlay -->
-    <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <!-- #region modal overlay -->
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true" data-modal>
       <div
         class="modal"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-title"
       >
-        <button class="modal-close" type="button" aria-label="Close modal">
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Close modal"
+          data-modal-close
+        >
           <svg
             class="modal-close-icon"
             width="8"
@@ -908,6 +920,11 @@
         </form>
       </div>
     </div>
-    <!-- #endregion madal overlay -->
+    <!-- #endregion modal overlay -->
+
+    <!-- #region script -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <!-- #endregion script -->
   </body>
 </html>
